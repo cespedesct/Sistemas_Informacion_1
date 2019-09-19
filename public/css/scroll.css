@@ -1,0 +1,6 @@
+.scroll{
+    width: 350x;
+    max-height:300px;
+    overflow: scroll;
+    background: #fff;
+}

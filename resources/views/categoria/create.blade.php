@@ -1,0 +1,21 @@
+@extends('layouts.head')
+@section('label','Categoria')
+@section('title','Nueva Categoria')
+
+@section('content')
+ <form class="form-group" method="POST" action ="/categorias" enctype="multipart/form-data">
+            {{ csrf_field() }} 
+            <div class ="form-group">
+                <label for="nombre" class="col-md-4 col-form-label text-md-right">Nombre</label>
+                <input name="nombre" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+            <div class="col-md-6 offset-md-4">
+                <button type="submit" class="btn btn-primary">
+                    Registrar
+                </button>
+                </div>
+            </div>
+    </form> 
+
+@endsection
